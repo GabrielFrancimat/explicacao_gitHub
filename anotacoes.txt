@@ -1,0 +1,56 @@
+💻 Ciclo básico de uso
+
+-- Criar um repositório no GitHub --
+git init
+
+-- Clonar o repositório para o seu computador --
+git clone https://github.com/seu_usuario/seu_projeto.git
+
+-- Fazer alterações e salvar -- 
+Adicionar os arquivos alterados
+
+-- 🔹 Adicionar um arquivo expecífico --
+git add nome_do_arquivo
+
+
+-- Adicionar todos os arquivos modificados --
+git add .
+
+-- Criar um commit --
+git commit -m "Mensagem explicando a mudança"
+
+
+🔹 Envie (“suba”) o projeto para o GitHub
+git branch -M main
+git push -u origin main
+
+-- 🧩 Ver o status e histórico --
+git status
+
+
+-- Mostra quais arquivos foram modificados, adicionados ou estão pendentes para commit --
+git log
+
+🔹 Criar uma nova branch
+git branch nome-da-branch
+
+🔹 Listar todas as branches
+git branch
+
+🔹 Mudar de branch
+git checkout nome-da-branch
+
+🔹 Criar e já mudar para a nova branch
+git checkout -b nome-da-branch
+
+🔹 Unir branches (fazer merge)
+git merge nome-da-branch
+
+
+💡 Dica de ouro
+Fluxo mais comum de trabalho:
+
+git status                # ver o que mudou
+git add .                 # preparar tudo
+git commit -m "mensagem"  # salvar versão
+git push origin main      # enviar para o GitHub
